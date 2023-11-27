@@ -1,5 +1,6 @@
 <script setup>
 import Lsearch from "@/components/layouts/Lsearch.vue";
+import LcreateTask from "@/components/layouts/LcreateTask.vue";
 
 import Tabs from "@/components/Home/Tabs.vue";
 import Tasks from "@/components/Home/Tasks.vue";
@@ -25,6 +26,7 @@ const tabs = {
   <main class="home">
     <Lsearch />
     <Tabs />
+    <LcreateTask />
     <KeepAlive>
       <component :is="tabs[tabsStore.currentTab]" />
     </KeepAlive>
