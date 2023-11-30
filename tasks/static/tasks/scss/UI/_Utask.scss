@@ -1,0 +1,42 @@
+.u-task {
+  display: none;
+
+  &-label {
+    display: flex;
+    align-items: center;
+    gap: 8px; // change here
+
+    cursor: pointer;
+
+    color: red; // change here
+    &::before {
+      content: "";
+      width: 20px; // change here
+      height: 20px; // change here
+
+      border: 1px solid red; // change here
+
+      background-image: url(""); // change here
+      background-repeat: no-repeat;
+      background-size: 0%;
+    }
+
+    &:hover {
+      // change here
+      text-decoration: underline red;
+    }
+  }
+
+  &:checked + &-label {
+    &::before {
+      background-size: 100%;
+      background-color: red;
+      // change here
+    }
+  }
+
+  &:disabled + &-label {
+    // change here
+    color: gray;
+  }
+}

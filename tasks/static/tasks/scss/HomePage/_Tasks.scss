@@ -1,0 +1,14 @@
+.tasks{
+  display: none;
+  &__active{
+    display: block;
+    height: max-content;
+    background-color: #fff;
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+  }
+}

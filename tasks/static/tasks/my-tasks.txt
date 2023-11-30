@@ -1,0 +1,6 @@
+1. create/delete task
+2. fetch
+
+Сделано: 
+1. Логика поиска
+2. Переключение tasks/todo 

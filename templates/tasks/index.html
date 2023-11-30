@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../tasks/static/tasks/css/style.css">
+  <title>ToDo</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo"></div>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="/" class="menu__link">Home</a> <!-- Тут ссылки на страницы, твои templates, отредактируешь -->
+          </li>
+          <li>
+            <a href="/about" class="menu__link">About us</a> <!-- Тут ссылки на страницы, твои templates, отредактируешь -->
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- header -->
+
+  <section class="search">
+    <div class="search__container">
+      <input class="u-search" type="search" placeholder="search here" class="search__input">
+    </div>
+  </section>
+  <!-- search-container -->
+
+  <section class="tabs">
+    <div class="tabs__container">
+      <input
+        name="tabs"
+        class="u-tab"
+        type="radio"
+        id="todo-tab"
+        value="todo"
+        checked
+        >
+      <label for="todo-tab" class="u-tab-label">ToDo</label>
+
+      <input
+        name="tabs"
+        class="u-tab"
+        type="radio"
+        id="tasks-tab"
+        value="tasks"
+        >
+      <label for="tasks-tab" class="u-tab-label">Tasks</label>
+    </div>
+  </section>
+  <!-- tabs -->
+
+  <main id="main" class="main">
+    <section class="todo">
+      <div class="todo__container">
+        <input type="checkbox" class="u-todo" id="todo-1"><label for="todo-1" class="u-todo-label">Todo-1</label>
+        <input type="checkbox" class="u-todo" id="todo-2"><label for="todo-2" class="u-todo-label">Todo-2</label>
+        <input type="checkbox" class="u-todo" id="todo-3"><label for="todo-3" class="u-todo-label">Todo-3</label>
+        <input type="checkbox" class="u-todo" id="todo-4"><label for="todo-4" class="u-todo-label">Todo-4</label>
+        <input type="checkbox" class="u-todo" id="todo-5"><label for="todo-5" class="u-todo-label">Todo-5</label>
+        <!-- todos -->
+      </div>
+    </section>
+    <!-- todo -->
+    
+    <section class="tasks">
+    <div class="tasks__container">
+      <!-- tasks -->
+    </div>
+    </section>
+    <!-- tasks -->
+  </main>
+
+  <script type="module" src="../../tasks/static/tasks/js/script.js"></script>
+</body>
+</html>

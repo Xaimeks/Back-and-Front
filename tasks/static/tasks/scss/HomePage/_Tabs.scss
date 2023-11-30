@@ -1,0 +1,9 @@
+.tabs {
+  margin-top: 20px;
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+}

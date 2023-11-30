@@ -1,0 +1,38 @@
+.u-tab {
+  display: none;
+
+  &-label {
+    max-width: 300px;
+    width: 100%;
+    min-width: 100px;
+    padding: 15px 0;
+
+    display: block;
+
+    text-align: center;
+    cursor: pointer;
+
+    color: #fff; // change here
+    background-color: red;
+    border: 0;
+    border-radius: 8px;
+    transition: border 0.3s ease-in-out, border-radius 0.5s ease-in-out;
+
+    &:hover {
+      background-color: rgb(241, 67, 67);
+    }
+  }
+
+  &:checked + &-label {
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    border-radius: 0;
+  }
+
+  &:disabled + &-label {
+    // change here
+    background-color: lightgray;
+    color: gray;
+  }
+}
