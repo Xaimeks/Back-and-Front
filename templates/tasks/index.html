@@ -58,11 +58,18 @@
   <main id="main" class="main">
     <section class="todo">
       <div class="todo__container">
-        <input type="checkbox" class="u-todo" id="todo-1"><label for="todo-1" class="u-todo-label">Todo-1</label>
-        <input type="checkbox" class="u-todo" id="todo-2"><label for="todo-2" class="u-todo-label">Todo-2</label>
-        <input type="checkbox" class="u-todo" id="todo-3"><label for="todo-3" class="u-todo-label">Todo-3</label>
-        <input type="checkbox" class="u-todo" id="todo-4"><label for="todo-4" class="u-todo-label">Todo-4</label>
-        <input type="checkbox" class="u-todo" id="todo-5"><label for="todo-5" class="u-todo-label">Todo-5</label>
+        <form class="todo__create-todo-form create-form">
+          <h3 class="create-form__title">Create todo</h3>
+          <input type="text" class="create-form__title-input">
+          <button type="button" class="create-todo-form__button create-form__button">Create todo</button>
+        </form>
+        <div class="todo__content">
+          <input type="checkbox" class="u-todo" id="todo-1"><label for="todo-1" class="u-todo-label">Todo-1</label>
+          <input type="checkbox" class="u-todo" id="todo-2"><label for="todo-2" class="u-todo-label">Todo-2</label>
+          <input type="checkbox" class="u-todo" id="todo-3"><label for="todo-3" class="u-todo-label">Todo-3</label>
+          <input type="checkbox" class="u-todo" id="todo-4"><label for="todo-4" class="u-todo-label">Todo-4</label>
+          <input type="checkbox" class="u-todo" id="todo-5"><label for="todo-5" class="u-todo-label">Todo-5</label>
+        </div>
         <!-- todos -->
       </div>
     </section>

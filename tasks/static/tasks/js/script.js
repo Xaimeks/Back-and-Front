@@ -1,6 +1,6 @@
-export {setActiveTab} from './eventListeners/setActiveTab.js'
-export {searchedList} from './eventListeners/searchedTasks.js'
-
+import {setActiveTab} from './eventListeners/setActiveTab.js'
+import {searchedList} from './eventListeners/searchedTasks.js'
+import {} from './eventListeners/createTodo.js'
 // const main = document.getElementById('main');
 
 // const tasks = main.querySelector('.tasks');

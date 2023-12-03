@@ -193,7 +193,7 @@
   height: max-content;
   background-color: #fff;
 }
-.todo__container {
+.todo__content, .todo__container {
   display: flex;
   align-items: center;
   flex-flow: column nowrap;

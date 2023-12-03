@@ -1,9 +1,13 @@
-const main = document.getElementById('main');
+import { todoList } from "../components/todo.js";
+import { tasks, todo, tabs, searchElement } from "../elements.js";
+import { useSearchedList } from "../use/useSearchedList.js";
 
-const tasks = main.querySelector('.tasks');
-const todo = main.querySelector('.todo');
+// const main = document.getElementById('main');
 
-const tabs = document.body.querySelector('.tabs').querySelectorAll('.u-tab');
+// const tasks = main.querySelector('.tasks');
+// const todo = main.querySelector('.todo');
+
+// const tabs = document.body.querySelector('.tabs').querySelectorAll('.u-tab');
 
 export function setActiveTab(element){
   if(element.checked && element.value === 'tasks'){
@@ -13,6 +17,8 @@ export function setActiveTab(element){
     todo.classList.add('todo__active');
     tasks.classList.remove('tasks__active');
   }
+  searchElement.value = '';
+  useSearchedList(todoList)
 }
 
 for(const el of tabs){

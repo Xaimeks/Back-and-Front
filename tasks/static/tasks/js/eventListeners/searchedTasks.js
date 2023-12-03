@@ -1,22 +1,15 @@
 import {todoList} from './../components/todo.js'
-
-const searchElement = document.body.querySelector('.u-search');
-
-const todo = document.querySelector('.todo__container');
+import { searchElement, todoCheckboxes } from "../elements.js";
+import { useCheckboxes } from '../use/useCheckboxes.js';
+import { useSearchedList } from '../use/useSearchedList.js'
 
 export let searchedList = todoList;
 
-const renderSearchedList = () => {
-  let html = '';
-  for(let i = 0; i < searchedList.length; i++){
-    const obj = searchedList[i];
-    html += `<input type="checkbox" class="u-todo" id="${obj.id}"><label for="${obj.id}" class="u-todo-label">${obj.title}</label>`
-  }
-  todo.innerHTML = html;
-}
+useCheckboxes(todoCheckboxes);
+useSearchedList(searchedList);
 
 searchElement.addEventListener('input', (e) => {
   let search = e.target.value.toLowerCase();
   searchedList = todoList.filter((task) => task.title.toLowerCase().includes(search));
-  renderSearchedList();
+  useSearchedList(searchedList);
 })
