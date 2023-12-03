@@ -11,6 +11,7 @@ createButton.addEventListener('click', () => {
     deleted: false,
   }
   todoList.push(todo);
+  createTodo(todoList);
   console.log(createTodo(todoList));
 })
 
@@ -21,7 +22,7 @@ async function createTodo(todoList) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(Object.assign({}, todoList)),
+    body: JSON.stringify(todoList),
   });
   return await response.json();
 }
