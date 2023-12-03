@@ -15,6 +15,8 @@ createButton.addEventListener('click', () => {
   console.log(createTodo(todoList));
 })
 
+// тебе отправляется массив всех todo
+
 async function createTodo(todoList) {
   const response = await fetch('http://127.0.0.1:8000/', {
     method: 'POST',
